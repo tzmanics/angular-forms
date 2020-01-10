@@ -1,31 +1,19 @@
 <div class="simple-form-examples">
   <h1>Simple Contact Form</h1>
-  <form class="simple-form" method="POST" netlify>
+  <form
+    name="simple-form"
+    class="simple-form"
+    method="POST"
+    data-netlify="true"
+  >
     <div class="field">
-      <input
-        type="text"
-        name="name"
-        class="input"
-        placeholder="name"
-        [(ngModel)]="name"
-      />
+      <input type="text" name="name" class="input" placeholder="name" />
     </div>
     <div class="field">
-      <input
-        type="email"
-        name="email"
-        class="input"
-        placeholder="email"
-        [(ngModel)]="email"
-      />
+      <input type="email" name="email" class="input" placeholder="email" />
     </div>
     <div class="field">
-      <textarea
-        name="message"
-        class="textarea"
-        placeholder="message"
-        [(ngModel)]="message"
-      >
+      <textarea name="message" class="textarea" placeholder="message">
       </textarea>
     </div>
     <button type="submit">Submit</button>

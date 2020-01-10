@@ -7,9 +7,6 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   title = "angular-forms";
-  name: string;
-  email: string;
-  message: string;
 
   constructor() {}
   ngOnInit() {}
