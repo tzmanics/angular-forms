@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import {IdleMonitorService} from '@scullyio/ng-lib'; 
+ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -8,6 +9,6 @@ import { Component, OnInit } from "@angular/core";
 export class AppComponent implements OnInit {
   title = "angular-forms";
 
-  constructor() {}
+  constructor(private idle: IdleMonitorService) {}
   ngOnInit() {}
 }
